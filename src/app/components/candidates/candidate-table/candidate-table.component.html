@@ -1,0 +1,39 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> Candidate Id </th>
+    <td mat-cell *matCellDef="let candidate"> {{candidate.id}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let candidate"> {{candidate.name}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="email">
+    <th mat-header-cell *matHeaderCellDef> Email </th>
+    <td mat-cell *matCellDef="let candidate"> {{candidate.email}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="phone">
+    <th mat-header-cell *matHeaderCellDef> Phone </th>
+    <td mat-cell *matCellDef="let candidate"> {{candidate.phone}} </td>
+  </ng-container>
+  <ng-container matColumnDef="meetingTime">
+    <th mat-header-cell *matHeaderCellDef> Meeting Time </th>
+    <td mat-cell *matCellDef="let candidate"> {{candidate.meetingTime}} </td>
+  </ng-container>
+  <ng-container matColumnDef="panelistName">
+    <th mat-header-cell *matHeaderCellDef> PanelistName </th>
+    <td mat-cell *matCellDef="let candidate"> {{candidate.panelistName}} </td>
+  </ng-container>
+  <ng-container matColumnDef="coPanelistName">
+    <th mat-header-cell *matHeaderCellDef> Co-PanelistName </th>
+    <td mat-cell *matCellDef="let candidate"> {{candidate.coPanelistName}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

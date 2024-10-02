@@ -1,0 +1,99 @@
+{"data":[{
+  "candidateId": "C001",
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "johndoe@example.com",
+  "phoneNumber": "123-456-7890",
+  "education": [
+    {
+      "degree": "Bachelor of Science",
+      "fieldOfStudy": "Computer Science",
+      "university": "Harvard University",
+      "graduationDate": "2015-05-01"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Google",
+      "jobTitle": "Software Engineer",
+      "startDate": "2015-06-01",
+      "endDate": "2018-08-01",
+      "jobDescription": "Developed several high-traffic web applications"
+    }
+  ],
+  "skills": ["Java", "Python", "JavaScript"],
+  "interviews": [
+    {
+      "interviewer": "Jane Smith",
+      "interviewDate": "2022-02-10",
+      "interviewResult": "Passed"
+    }
+  ]
+},
+{
+  "candidateId": "C002",
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "janesmith@example.com",
+  "phoneNumber": "098-765-4321",
+  "education": [
+    {
+      "degree": "Master of Business Administration",
+      "fieldOfStudy": "Finance",
+      "university": "Stanford University",
+      "graduationDate": "2018-06-01"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Microsoft",
+      "jobTitle": "Financial Analyst",
+      "startDate": "2018-07-01",
+      "endDate": "2020-12-01",
+      "jobDescription": "Analyzed financial data to inform business decisions"
+    }
+  ],
+  "skills": ["Excel", "Financial Modeling", "Data Analysis"],
+  "interviews": [
+    {
+      "interviewer": "John Doe",
+      "interviewDate": "2022-03-15",
+      "interviewResult": "Failed"
+    }
+  ]
+},
+{
+  "candidateId": "C003",
+  "firstName": "Bob",
+  "lastName": "Johnson",
+  "email": "bobjohnson@example.com",
+  "phoneNumber": "555-123-4567",
+  "education": [
+    {
+      "degree": "Bachelor of Arts",
+      "fieldOfStudy": "English",
+      "university": "Yale University",
+      "graduationDate": "2012-05-01"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": "Amazon",
+      "jobTitle": "Content Writer",
+      "startDate": "2012-06-01",
+      "endDate": "2015-08-01",
+      "jobDescription": "Wrote engaging content for e-commerce platform"
+    }
+  ],
+  "skills": ["Writing", "Content Creation", "SEO"],
+  "interviews": [
+    {
+      "interviewer": "Jane Smith",
+      "interviewDate": "2022-01-20",
+      "interviewResult": "Passed"
+    }
+  ]
+}
+
+]
+}

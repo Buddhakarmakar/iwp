@@ -1,0 +1,105 @@
+{
+  "candidateId": {
+    "type": "string",
+    "required": true
+  },
+  "firstName": {
+    "type": "string",
+    "required": true
+  },
+  "lastName": {
+    "type": "string",
+    "required": true
+  },
+  "email": {
+    "type": "string",
+    "required": true,
+    "unique": true
+  },
+  "phoneNumber": {
+    "type": "string",
+    "required": true
+  },
+  "education": {
+    "type": "array",
+    "required": true,
+    "items": {
+      "type": "object",
+      "properties": {
+        "degree": {
+          "type": "string",
+          "required": true
+        },
+        "fieldOfStudy": {
+          "type": "string",
+          "required": true
+        },
+        "university": {
+          "type": "string",
+          "required": true
+        },
+        "graduationDate": {
+          "type": "date",
+          "required": true
+        }
+      }
+    }
+  },
+  "workExperience": {
+    "type": "array",
+    "required": true,
+    "items": {
+      "type": "object",
+      "properties": {
+        "company": {
+          "type": "string",
+          "required": true
+        },
+        "jobTitle": {
+          "type": "string",
+          "required": true
+        },
+        "startDate": {
+          "type": "date",
+          "required": true
+        },
+        "endDate": {
+          "type": "date",
+          "required": true
+        },
+        "jobDescription": {
+          "type": "string",
+          "required": true
+        }
+      }
+    }
+  },
+  "skills": {
+    "type": "array",
+    "required": true,
+    "items": {
+      "type": "string"
+    }
+  },
+  "interviews": {
+    "type": "array",
+    "required": true,
+    "items": {
+      "type": "object",
+      "properties": {
+        "interviewer": {
+          "type": "string",
+          "required": true
+        },
+        "interviewDate": {
+          "type": "date",
+          "required": true
+        },
+        "interviewResult": {
+          "type": "string",
+          "required": true
+        }
+      }
+    }
+  }
+}

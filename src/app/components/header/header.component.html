@@ -1,0 +1,64 @@
+<nav class="flex justify-between items-center py-2 bg-blue-200">
+  <!-- Sidebar icon on left -->
+
+  <div (outsideClick)="isSideBarOpen=false">
+    <!-- Sidebar Toggle Button -->
+    <button mat-icon-button (click)="toggleSidebar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <!-- Sidebar -->
+    <nav class="sidebar fixed top-0 left-0 h-screen w-64 bg-white shadow-md" [class.open]="isSideBarOpen">
+      <ul class="list-none py-2 ">
+        <li class="py-2 px-4 hover:bg-gray-100 cursor-pointer border-b border-gray-200"
+          (click)="handleClick('dashboard')">
+          <a routerLink="/dashboard" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+        </li>
+        <li class="py-2  px-4 hover:bg-gray-100 cursor-pointer border-b border-gray-200"
+          (click)="handleClick('settings')">
+          <a routerLink="/settings" class="text-gray-600 hover:text-gray-900">Settings</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- Nav links -->
+  <ul class="flex justify-between items-center">
+    <li class="mr-6">
+      <a class="text-gray-600 hover:text-gray-900 transition duration-300 ease-in-out" href="#">Home</a>
+    </li>
+    <li class="mr-6">
+      <a class="text-gray-600 hover:text-gray-900 transition duration-300 ease-in-out" href="#">About</a>
+    </li>
+    <li class="mr-6">
+      <a class="text-gray-600 hover:text-gray-900 transition duration-300 ease-in-out" href="#">Contact</a>
+    </li>
+  </ul>
+
+  <!-- Theme switch button -->
+  <!-- Theme switcher button -->
+  <button mat-icon-button (click)="handleThemeSwitch()" [ngClass]="isDark ? 'text-gray-600' : ''">
+    <!-- Display sun icon for light theme, moon icon for dark theme -->
+    <mat-icon>{{ isDark ? 'wb_sunny' : 'nightlight' }}</mat-icon>
+  </button>
+
+
+  <!-- Dropdown on right -->
+  <div class="relative" (outsideClick)="isDropownOpen=false">
+    <button class="text-gray-600 hover:text-gray-900 transition duration-300 ease-in-out" (click)="toogleDropdown()">
+      <mat-icon>info</mat-icon>
+    </button>
+    <ul class=" absolute right-0 mt-2 w-48 bg-white rounded-md shadow-md "
+      [ngStyle]="{'display': isDropownOpen?'block':'none'}">
+      <li class="py-2 px-4 border-b border-gray-200">
+        <a class="text-gray-600 hover:text-gray-900 transition duration-300 ease-in-out" href="#">Profile</a>
+      </li>
+      <li class="py-2 px-4 border-b border-gray-200">
+        <a class="text-gray-600 hover:text-gray-900 transition duration-300 ease-in-out" href="#">Settings</a>
+      </li>
+      <li class="py-2 px-4">
+        <a class="text-gray-600 hover:text-gray-900 transition duration-300 ease-in-out" href="#">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
